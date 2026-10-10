@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" font-family="sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<title>Covariate shift in behavior cloning</title>
+<desc>BC errors compound off the expert trajectory; DAgger queries the expert in drifted states and pulls the policy back.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<text x="170" y="30" text-anchor="middle" font-size="14" font-weight="500">BC: errors compound</text>
+<text x="510" y="30" text-anchor="middle" font-size="14" font-weight="500">DAgger: relabel + recover</text>
+
+<rect x="40" y="50" width="260" height="200" rx="8" fill="#D3D1C7" fill-opacity="0.3" stroke="#888780" stroke-width="0.5"/>
+<rect x="380" y="50" width="260" height="200" rx="8" fill="#D3D1C7" fill-opacity="0.3" stroke="#888780" stroke-width="0.5"/>
+
+<path d="M60 200 C 110 180, 160 130, 280 90" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round"/>
+<text x="60" y="218" font-size="12" fill="#0F6E56">Expert trajectory</text>
+
+<path d="M60 200 C 100 195, 140 180, 175 165" fill="none" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+<path d="M175 165 C 200 158, 220 165, 240 185" fill="none" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+<path d="M240 185 C 255 200, 265 220, 270 240" fill="none" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+<circle cx="175" cy="165" r="3" fill="#A32D2D"/>
+<circle cx="240" cy="185" r="3" fill="#A32D2D"/>
+<circle cx="270" cy="240" r="4" fill="#A32D2D"/>
+<text x="183" y="155" font-size="12" fill="#A32D2D">small error</text>
+<text x="248" y="180" font-size="12" fill="#A32D2D">bigger error</text>
+<text x="200" y="258" text-anchor="middle" font-size="12" fill="#A32D2D">OOD failure</text>
+
+<path d="M400 200 C 450 180, 500 130, 620 90" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round"/>
+<text x="400" y="218" font-size="12" fill="#0F6E56">Expert trajectory</text>
+<path d="M400 200 C 440 195, 480 180, 515 165" fill="none" stroke="#534AB7" stroke-width="2" stroke-linecap="round"/>
+<path d="M515 165 C 530 145, 555 125, 600 105" fill="none" stroke="#534AB7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="515" cy="165" r="3" fill="#3C3489"/>
+<line x1="515" y1="165" x2="540" y2="142" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<text x="540" y="178" font-size="12" fill="#3C3489">expert label</text>
+<text x="568" y="138" font-size="12" fill="#0F6E56">corrective action</text>
+
+<text x="170" y="288" text-anchor="middle" font-size="12">Train data ⊂ expert states only</text>
+<text x="510" y="288" text-anchor="middle" font-size="12">Train data includes drifted states</text>
+</svg>
