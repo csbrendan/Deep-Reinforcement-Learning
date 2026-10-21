@@ -15,6 +15,8 @@ I took Deep Reinforcement Learning at Stanford in Spring 2026. This repository c
 
 ### [Safe Reinforcement Learning for Clinical Multi-Turn Agents Requires More Than Outcome Rewards](Reward_Design_for_Clinical_Multi_Turn_Agents.pdf)
 
+> **Work in progress.** This is a draft and will be updated.
+
 I study reinforcement learning for clinical agents that must decide what information to request, when to stop gathering evidence, and which action to take. Using three controlled environments (medication refill triage, acute diagnostic workup, and dosing titration), I show that outcome-only reward often raises aggregate reward while producing unsafe procedures such as premature commitment and failures on rare high-risk cases. Giving dense credit to questions that reduce uncertainty improves held-out value and stabilizes high-risk performance.
 
 **[Read the paper (PDF) →](Reward_Design_for_Clinical_Multi_Turn_Agents.pdf)**
