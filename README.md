@@ -5,11 +5,19 @@
 **Stanford · Spring 2026**  
 Personal notes, writing, and visual experiments by [Brendan P. Murphy](https://csbrendan.github.io/)
 
-[Articles](#writing) · [MuJoCo demo](#mujoco-in-motion) · [Grid world](#a-grid-world-for-meta-rl) · [Visual notes](#visual-notes)
+[Paper](#paper) · [Articles](#writing) · [MuJoCo demo](#mujoco-in-motion) · [Grid world](#a-grid-world-for-meta-rl) · [Visual notes](#visual-notes)
 
 </div>
 
 I took Deep Reinforcement Learning at Stanford in Spring 2026. This repository collects my writing and selected visuals from the course, from learning in simulated environments to using RL to train language models.
+
+## Paper
+
+### [Safe Reinforcement Learning for Clinical Multi-Turn Agents Requires More Than Outcome Rewards](Reward_Design_for_Clinical_Multi_Turn_Agents.pdf)
+
+I study reinforcement learning for clinical agents that must decide what information to request, when to stop gathering evidence, and which action to take. Using three controlled environments (medication refill triage, acute diagnostic workup, and dosing titration), I show that outcome-only reward often raises aggregate reward while producing unsafe procedures such as premature commitment and failures on rare high-risk cases. Giving dense credit to questions that reduce uncertainty improves held-out value and stabilizes high-risk performance.
+
+**[Read the paper (PDF) →](Reward_Design_for_Clinical_Multi_Turn_Agents.pdf)**
 
 ## MuJoCo in motion
 
@@ -76,6 +84,6 @@ Two common approaches to preference tuning, connected to the ideas discussed in 
 
 ---
 
-Homework implementations, reward parameters, and written solutions are kept private. This repository contains personal writing, general concept diagrams, an environment illustration, and a simulation excerpt.
+Homework implementations, reward parameters, and written solutions are kept private. This repository contains my paper, personal writing, general concept diagrams, an environment illustration, and a simulation excerpt.
 
 [Media credits](assets/README.md) · [My blog](https://csbrendan.github.io/blog/) · [GitHub](https://github.com/csbrendan)
