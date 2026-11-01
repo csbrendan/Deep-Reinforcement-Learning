@@ -17,7 +17,9 @@ I took Deep Reinforcement Learning at Stanford in Spring 2026. This repository c
 
 Brendan P. Murphy. Preprint v1, November 2026. [PDF](Reward_Design_for_Clinical_Multi_Turn_Agents.pdf) · arXiv link forthcoming.
 
-v2 in progress: a larger evaluation with more high-risk cases and training seeds, a replication at MedGemma-27B, evaluation on an external interactive clinical benchmark, and clinician review of the task utilities and failure-mode labels.
+*v2 in progress: a larger evaluation with more high-risk cases and training seeds, a replication at MedGemma-27B, evaluation on an external interactive clinical benchmark, and clinician review of the task utilities and failure-mode labels.*
+
+I study reinforcement learning for clinical agents that must decide what information to request, when to stop gathering evidence, and which action to take. Using three controlled environments (medication refill triage, acute diagnostic workup, and dosing titration), I show that outcome-only reward often raises aggregate reward while producing unsafe procedures such as premature commitment and failures on rare high-risk cases. Giving dense credit to questions that reduce uncertainty improves held-out value and stabilizes high-risk performance.
 
 ## MuJoCo in motion
 
