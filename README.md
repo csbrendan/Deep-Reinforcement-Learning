@@ -13,13 +13,13 @@ I took Deep Reinforcement Learning at Stanford in Spring 2026. This repository c
 
 ## Paper
 
-### Safe Reinforcement Learning for Clinical Multi-Turn Agents Requires More Than Outcome Rewards
+### Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards
 
-Brendan P. Murphy. Preprint v1, November 2026. [PDF](Reward_Design_for_Clinical_Multi_Turn_Agents.pdf) · arXiv link forthcoming.
+Brendan P. Murphy and Agustina Saenz, MD, MPH. Preprint v1, November 2026. [PDF](https://github.com/csbrendan/Safe-Reinforcement-Learning-for-Multi-Turn-Clinical-Agents/blob/main/paper/main.pdf) · [Code](https://github.com/csbrendan/Safe-Reinforcement-Learning-for-Multi-Turn-Clinical-Agents) · arXiv link forthcoming.
 
-*v2 in progress: a larger evaluation with more high-risk cases and training seeds, a replication at MedGemma-27B, evaluation on an external interactive clinical benchmark, and clinician review of the task utilities and failure-mode labels.*
+*An extension is in progress: larger evaluation sets with more high-risk cases and training seeds, a replication at MedGemma-27B, evaluation on an external interactive clinical benchmark, and clinician review of the task utilities and sampled trajectories.*
 
-I study reinforcement learning for clinical agents that must decide what information to request, when to stop gathering evidence, and which action to take. Using three controlled environments (medication refill triage, acute diagnostic workup, and dosing titration), I show that outcome-only reward often raises aggregate reward while producing unsafe procedures such as premature commitment and failures on rare high-risk cases. Giving dense credit to questions that reduce uncertainty improves held-out value and stabilizes high-risk performance.
+We study reinforcement learning for clinical agents that must decide what information to request, when to stop gathering evidence, and which action to take. In three controlled environments (medication refill triage, acute diagnostic work-up, and dosing titration), outcome-only reward often raises aggregate reward while producing unsafe procedures such as premature commitment and failures on rare high-risk cases. In diagnostics, giving dense credit to questions that reduce uncertainty improves held-out value across three training seeds without the high-risk seed collapse seen under outcome-only training.
 
 ## MuJoCo in motion
 
@@ -86,6 +86,6 @@ Two common approaches to preference tuning, connected to the ideas discussed in 
 
 ---
 
-Homework implementations, reward parameters, and written solutions are kept private. This repository contains my paper, personal writing, general concept diagrams, an environment illustration, and a simulation excerpt.
+Homework implementations, reward parameters, and written solutions are kept private. This repository contains a link to my paper, personal writing, general concept diagrams, an environment illustration, and a simulation excerpt.
 
 [Media credits](assets/README.md) · [My blog](https://csbrendan.github.io/blog/) · [GitHub](https://github.com/csbrendan)
