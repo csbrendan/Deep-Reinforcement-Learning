@@ -15,7 +15,7 @@ I took Deep Reinforcement Learning at Stanford in Spring 2026. This repository c
 
 ### Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards
 
-Brendan P. Murphy and Agustina Saenz, MD, MPH. Preprint v1, November 2026. [PDF](https://github.com/csbrendan/Safe-Reinforcement-Learning-for-Multi-Turn-Clinical-Agents/blob/main/paper/main.pdf) · [Code](https://github.com/csbrendan/Safe-Reinforcement-Learning-for-Multi-Turn-Clinical-Agents) · arXiv link forthcoming.
+Brendan P. Murphy and Agustina Saenz, MD, MPH. arXiv preprint, November 2026. [arXiv:2611.12728](https://arxiv.org/abs/2611.12728) · [PDF](https://arxiv.org/pdf/2611.12728) · [Code](https://github.com/csbrendan/Safe-Reinforcement-Learning-for-Multi-Turn-Clinical-Agents)
 
 *An extension is in progress: larger evaluation sets with more high-risk cases and training seeds, a replication at MedGemma-27B, evaluation on an external interactive clinical benchmark, and clinician review of the task utilities and sampled trajectories.*
 
